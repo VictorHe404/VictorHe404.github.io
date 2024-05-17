@@ -5,9 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is Victor He's Website!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 40px;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            background: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h3>Welcome to my Website!</h3>
-    <a href="https://www.linkedin.com/in/victor-he-8a43b8264/">This is my LinkedIn Page.</a>
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="welcome">
+            <h3>Welcome to my Website!</h3>
+            <a href="https://www.linkedin.com/in/victor-he-8a43b8264/">This is my LinkedIn Page.</a>
+        </section>
+        
+        <section id="about" class="about">
+            <h3>About Me</h3>
+            <p>Hello! I'm Victor He, a passionate developer with expertise in web development, data analysis, and machine learning. I enjoy creating innovative solutions and continuously improving my skills.</p>
+        </section>
+        
+        <section id="projects" class="projects">
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <h4>Project 1</h4>
+                    <p>Description of project 1. It involves...</p>
+                </li>
+                <li>
+                    <h4>Project 2</h4>
+                    <p>Description of project 2. It involves...</p>
+                </li>
+                <li>
+                    <h4>Project 3</h4>
+                    <p>Description of project 3. It involves...</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h3>Contact Me</h3>
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Victor He. All rights reserved.</p>
+        <p><a href="https://www.linkedin.com/in/victor-he-8a43b8264/" style="color: white;">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
